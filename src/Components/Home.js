@@ -5,7 +5,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   const { data: blog, loading } = useFetch("http://localhost:8000/blogs");
-
+  console.log(React.version);
   return (
     <div>
       {loading && <div>Loading..........</div>}
